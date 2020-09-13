@@ -1,7 +1,5 @@
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the main branch
 on:
   workflow_dispatch:
     inputs:
@@ -9,16 +7,12 @@ on:
         name: 'DrakeHollow.Calculator'
   push:
     branches: [ main ]
+env:
+  appRoot: './Calculator'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./Calculator
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 10.x
@@ -26,30 +20,18 @@ jobs:
       with:
         node-version: '10.x'
         
-    - run: npm ci
-    - run: npm run build --if-present -- --prod --baseHref=${{ format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
-      
-    - run: echo ${{ github.repository_owner }}
-    - run: echo ${{ github.event.repository.name }}
-      working-directory: ./
+    - run: cd ${{ env.appRoot }} && npm ci
+    - run: ls
+    - run: cd ${{ env.appRoot }} && npm run build --if-present -- --prod --baseHref=${{ format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
+    - run: ls      
+#     - run: echo ${{ github.repository_owner }}
+#     - run: echo ${{ github.event.repository.name }}
+#       working-directory: ./
       
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.6.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: Calculator/dist
+        FOLDER: ${{ format('{0}/dist', env.appRoot) }}
         CLEAN: true 
-#     - name: Upload Build
-#       uses: actions/upload-artifact@v2
-#       with:
-#         name: app-build
-#         path: dist
-          
-#   update-gh-pages:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Download Build
-#         uses: actions/download-artifact@v2
-#         with:
-#           name: app-build
