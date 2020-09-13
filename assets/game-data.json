@@ -1,0 +1,2241 @@
+{
+    "drakes": [
+        {
+            "name": "Adolescent",
+            "additionalExperience": 30,
+            "cumulativeExperience": 30,
+            "requirements": [
+                {
+                    "name": "Hunger",
+                    "amount": 2
+                },
+                {
+                    "name": "Thirst",
+                    "amount": 3
+                },
+                {
+                    "name": "Boredom",
+                    "amount": 2
+                }
+            ]
+        },
+        {
+            "name": "Adult",
+            "additionalExperience": 20,
+            "cumulativeExperience": 50,
+            "requirements": [
+                {
+                    "name": "Hunger",
+                    "amount": 5
+                },
+                {
+                    "name": "Thirst",
+                    "amount": 6
+                },
+                {
+                    "name": "Boredom",
+                    "amount": 5
+                }
+            ]
+        },
+        {
+            "name": "Mature",
+            "additionalExperience": 40,
+            "cumulativeExperience": 90,
+            "requirements": [
+                {
+                    "name": "Hunger",
+                    "amount": 8
+                },
+                {
+                    "name": "Thirst",
+                    "amount": 9
+                },
+                {
+                    "name": "Boredom",
+                    "amount": 8
+                }
+            ]
+        },
+        {
+            "name": "Elder",
+            "additionalExperience": 40,
+            "cumulativeExperience": 130,
+            "requirements": [
+                {
+                    "name": "Hunger",
+                    "amount": 12
+                },
+                {
+                    "name": "Thirst",
+                    "amount": 13
+                },
+                {
+                    "name": "Boredom",
+                    "amount": 12
+                }
+            ]
+        }
+    ],
+
+    "camp": {
+        "levels": [
+            {
+                "level": 1,
+                "additionalBudget": 10,
+                "cumulativeBudget": 10,
+                "additionalExperience": 0,
+                "cumulativeExperience": 0
+            },
+            {
+                "level": 2,
+                "additionalBudget": 10,
+                "cumulativeBudget": 20,
+                "additionalExperience": 40,
+                "cumulativeExperience": 40
+            },
+            {
+                "level": 3,
+                "additionalBudget": 10,
+                "cumulativeBudget": 30,
+                "additionalExperience": 40,
+                "cumulativeExperience": 80
+            },
+            {
+                "level": 4,
+                "additionalBudget": 20,
+                "cumulativeBudget": 50,
+                "additionalExperience": 50,
+                "cumulativeExperience": 130
+            },
+            {
+                "level": 5,
+                "additionalBudget": 20,
+                "cumulativeBudget": 70,
+                "additionalExperience": 40,
+                "cumulativeExperience": 170
+            },
+            {
+                "level": 6,
+                "additionalBudget": 15,
+                "cumulativeBudget": 85,
+                "additionalExperience": 50,
+                "cumulativeExperience": 230
+            },
+            {
+                "level": 7,
+                "additionalBudget": 15,
+                "cumulativeBudget": 100,
+                "additionalExperience": 100,
+                "cumulativeExperience": 330
+            },
+            {
+                "level": 8,
+                "additionalBudget": 15,
+                "cumulativeBudget": 115,
+                "additionalExperience": 180,
+                "cumulativeExperience": 510
+            },
+            {
+                "level": 9,
+                "additionalBudget": 30,
+                "cumulativeBudget": 145,
+                "additionalExperience": 150,
+                "cumulativeExperience": 660
+            },
+            {
+                "level": 10,
+                "additionalBudget": 25,
+                "cumulativeBudget": 170,
+                "additionalExperience": 170,
+                "cumulativeExperience": 830
+            },
+            {
+                "level": 11,
+                "additionalBudget": 30,
+                "cumulativeBudget": 200,
+                "additionalExperience": 250,
+                "cumulativeExperience": 1080
+            },
+            {
+                "level": 12,
+                "additionalBudget": 50,
+                "cumulativeBudget": 250,
+                "additionalExperience": 320,
+                "cumulativeExperience": 1400
+            }
+        ],
+        "buildingCategories": [
+            "Crafting",
+            "Furniture",
+            "Entertainment",
+            "Drinking Water",
+            "Defenses",
+            "Food",
+            "Power",
+            "Utility Water",
+            "Heat",
+            "Plants"
+        ],
+
+        "buildings": [
+            {
+                "name": "Cleansing Cauldron",
+                "description": "Cleanse corrupted Drake supplies so they can be consumed.",
+                "budget": 1,
+                "schematics": 0,
+                "unlockLevel": 1,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 5
+                        },
+                        {
+                            "name": "Glowstone Shard",
+                            "amount": 2
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Thatched Bed",
+                "description": "A simple thatch of leaves and twigs. Good for a single night, but it'll help a Drake recover their energy. Provides Sleep.",
+                "budget": 0,
+                "schematics": 0,
+                "unlockLevel": 1,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Twigs",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Leaf Bundle",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 5
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [
+                        {
+                            "name": "Sleep",
+                            "amount": 1
+                        }
+                    ],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Poppet",
+                "description": "A fragile Poppet, not built to last. Gives a bit of joy to a Drake before crumbling to pieces. Provides Entertainment.",
+                "budget": 0,
+                "schematics": 0,
+                "unlockLevel": 1,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Upholstery Scrap",
+                            "amount": 1
+                        },
+                        {
+                            "name": "Cattail",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 5
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [
+                        {
+                            "name": "Entertainment",
+                            "amount": 2
+                        }
+                    ],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Simple Curio Workshop",
+                "description": "A simple workshop where you can unlock and create enchanted Curios.",
+                "budget": 1,
+                "schematics": 1,
+                "unlockLevel": 1,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 5
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 10
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Yoga Ball",
+                "description": "Help your village-dwelling friends align their chakras through the ancients art of messing around on a giant rubber Yoga Ball. Provides Entertainment.",
+                "budget": 2,
+                "schematics": 1,
+                "unlockLevel": 2,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Stone",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 5
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [
+                        {
+                            "name": "Entertainment",
+                            "amount": 4
+                        }
+                    ],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Cleansing Well",
+                "description": "A Well, not useful for irrigation, but a nice place for Drakes to have a sip & quench their thirst. Provides daily water for close to 3 Drakes.",
+                "budget": 2,
+                "schematics": 1,
+                "unlockLevel": 2,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 5
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [
+                        {
+                            "name": "Water",
+                            "amount": 4
+                        }
+                    ],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Bed",
+                "description": "A place for Drakes to rest. Every Drakes needs a bed. Provides Sleep.",
+                "budget": 2,
+                "schematics": 1,
+                "unlockLevel": 2,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [
+                        {
+                            "name": "Sleep",
+                            "amount": 1
+                        }
+                    ],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Planter",
+                "description": "A place to grow your vegetables. Plant some seeds, set it and forget it. Provides Food.",
+                "budget": 2,
+                "schematics": 1,
+                "unlockLevel": 2,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [
+                        {
+                            "name": "Food",
+                            "amount": 6
+                        }
+                    ],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Fir Tree",
+                "description": "Tall and elegant, the Fir stands strong against the elements year round.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 2,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Fir Cone",
+                            "amount": 1
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Wood Fence",
+                "description": "A low wall.",
+                "budget": 0,
+                "schematics": 0,
+                "unlockLevel": 3,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 5
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Bunk Bed",
+                "description": "The perfect place for a Drake slumber party. Provides Sleep.",
+                "budget": 4,
+                "schematics": 1,
+                "unlockLevel": 3,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [
+                        {
+                            "name": "Sleep",
+                            "amount": 3
+                        }
+                    ],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Treadmill",
+                "description": "A treadmill in which a running Drake can produce power.",
+                "budget": 3,
+                "schematics": 1,
+                "unlockLevel": 3,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 5
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Advanced Curio Workshop",
+                "description": "A forge designed to shape the power of the Glowstones into useful tools to help push back the corruption and expand your village.",
+                "budget": 3,
+                "schematics": 1,
+                "unlockLevel": 3,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Pinball Machine",
+                "description": "Old-school classic gaming, it'll keep a Drake engaged for hours. Provides Entertainment.",
+                "budget": 4,
+                "schematics": 1,
+                "unlockLevel": 3,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 3
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [
+                        {
+                            "name": "Entertainment",
+                            "amount": 4
+                        }
+                    ],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Blighted Water Pump",
+                "description": "Pulls blighted water from deep within the soil.",
+                "budget": 4,
+                "schematics": 1,
+                "unlockLevel": 4,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Blighted Water",
+                            "amount": 5
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Tub Planter",
+                "description": "An efficient bathtub planter. Provides Food.",
+                "budget": 3,
+                "schematics": 2,
+                "unlockLevel": 4,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Water",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Food",
+                            "amount": 12
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Water Relay",
+                "description": "Keep the flow moving with a Water Relay",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 4,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 1
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 10
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Power Relay",
+                "description": "Keep your connections tidy with a Power Relay.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 4,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 1
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 10
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Tall Wood Fence",
+                "description": "A high wall.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 4,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 10
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Pine Tree",
+                "description": "A Pine, bred annually and a prized catch around the Christmas holiday.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 4,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Pine Cone",
+                            "amount": 1
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Lobster Pen",
+                "description": "Home of future lobster rolls. Provides Food.",
+                "budget": 6,
+                "schematics": 1,
+                "unlockLevel": 5,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Water",
+                            "amount": 2
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Food",
+                            "amount": 16
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Electric Water Pump",
+                "description": "As if by magic, convert power into water.",
+                "budget": 4,
+                "schematics": 3,
+                "unlockLevel": 5,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 2
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Blighted Water",
+                            "amount": 10
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Cleansing Water Cooler",
+                "description": "A crystal-infused tank that purifies the blighted water that comes from the soil. Stores Water.",
+                "budget": 4,
+                "schematics": 3,
+                "unlockLevel": 5,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 2
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Cleansed Water",
+                            "amount": 12
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Greenhouse",
+                "description": "A greenhouse. Provides Food.",
+                "budget": 6,
+                "schematics": 1,
+                "unlockLevel": 6,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Water",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Food",
+                            "amount": 20
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Small Battery",
+                "description": "A small battery used to hold power.",
+                "budget": 1,
+                "schematics": 1,
+                "unlockLevel": 6,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Circuitry",
+                            "amount": 12
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 3
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Spinning Chopper",
+                "description": "Convert power into spinning blades of death.",
+                "budget": 4,
+                "schematics": 2,
+                "unlockLevel": 6,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 4
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Bunker",
+                "description": "A former battle bus, now a battle-sits-still thing. Provides cover for a Drake as well as plenty of blow darts.",
+                "budget": 4,
+                "schematics": 4,
+                "unlockLevel": 6,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 100
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Birch Tree",
+                "description": "A beautiful accent tree to liven up your camp.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 6,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Birch Seed",
+                            "amount": 1
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Windmill",
+                "description": "Harness the power of the wind to generate electricity.",
+                "budget": 4,
+                "schematics": 2,
+                "unlockLevel": 7,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 10
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Wood Gate",
+                "description": "A gate.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 7,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 10
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Disco Floor",
+                "description": "The Drakes would dance all day on this if they could. Provides Entertainment.",
+                "budget": 6,
+                "schematics": 3,
+                "unlockLevel": 7,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Entertainment",
+                            "amount": 20
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Disco Floor",
+                "description": "The Drakes would dance all day on this if they could. Provides Entertainment.",
+                "budget": 6,
+                "schematics": 3,
+                "unlockLevel": 7,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Entertainment",
+                            "amount": 20
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Tesla Coil",
+                "description": "When powered up, a potent defensive machine capable of zapping incoming threats. Somehow smart enough to not zap you or Drakes.",
+                "budget": 4,
+                "schematics": 6,
+                "unlockLevel": 7,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 12
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 12
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 100
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 4
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Hot Tub",
+                "description": "A fun and relaxing way for Drakes to unwind after a hard day of lounging around and not really doing much. Provides Entertainment.",
+                "budget": 6,
+                "schematics": 4,
+                "unlockLevel": 7,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Water",
+                            "amount": 2
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Entertainment",
+                            "amount": 30
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Metal Fence",
+                "description": "A strong and sturdy metal fence.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 8,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Swing Set",
+                "description": "A fun diversion for Drakes from their normal terrestrial existance. Provides Entertainment.",
+                "budget": 4,
+                "schematics": 3,
+                "unlockLevel": 8,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Entertainment",
+                            "amount": 16
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Solar Panel",
+                "description": "Go green with clean, natural solar power.",
+                "budget": 4,
+                "schematics": 4,
+                "unlockLevel": 8,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 12
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 100
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 15
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Cleansed Water Alchemizer",
+                "description": "Produces blighted water from thin air.",
+                "budget": 6,
+                "schematics": 4,
+                "unlockLevel": 8,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 10
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 10
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 10
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 100
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 2
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Blighted Water",
+                            "amount": 15
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Tall Metal Fence",
+                "description": "A taller variation of the Metal Fence.",
+                "budget": 0,
+                "schematics": 2,
+                "unlockLevel": 8,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+
+            {
+                "name": "Maple Tree",
+                "description": "A summer time climbing favorite for kids.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 8,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Maple Seed",
+                            "amount": 1
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Stone Wall",
+                "description": "A wall made of various stones and rocks.",
+                "budget": 0,
+                "schematics": 2,
+                "unlockLevel": 9,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Stone",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 10
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Massage Bed",
+                "description": "A magic-fingers, vibrating massage bed leads to deeper more restful sleep Provides Sleep and Entertainment.",
+                "budget": 2,
+                "schematics": 4,
+                "unlockLevel": 9,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 12
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 100
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 4
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Sleep",
+                            "amount": 1
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Ballista",
+                "description": "A powerful, ballistic defensive weapon, launches projectiles into raiding foes when operated by a Drake.",
+                "budget": 3,
+                "schematics": 5,
+                "unlockLevel": 9,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 12
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Cleansing Water Tank",
+                "description": "An enourmous tank that can store an extraordinary supply of water as it cleanses and purifies it. Stores Water.",
+                "budget": 6,
+                "schematics": 4,
+                "unlockLevel": 9,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 6
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Water",
+                            "amount": 3
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Water",
+                            "amount": 24
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Wood Stove",
+                "description": "A stove that emits limited warmth.",
+                "budget": 0,
+                "schematics": 0,
+                "unlockLevel": 9,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Heat",
+                            "amount": 3
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Puppet Show",
+                "description": "The Drakes entertain each other by putting on an award-winning puppet show. Provides Entertainment.",
+                "budget": 4,
+                "schematics": 5,
+                "unlockLevel": 10,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Entertainment",
+                            "amount": 12
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Large Battery",
+                "description": "A larger battery that can hold are large amount of power.",
+                "budget": 2,
+                "schematics": 4,
+                "unlockLevel": 10,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Circuitry",
+                            "amount": 24
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 100
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 5
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Tall Stone Wall",
+                "description": "A taller wall made of various stones and rocks.",
+                "budget": 0,
+                "schematics": 2,
+                "unlockLevel": 10,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Stone",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 20
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Hydroponic Greenhouse",
+                "description": "This Hydroponic Greenhouse meets all the necessary needs to feed plenty of Drakes. Provides Food.",
+                "budget": 8,
+                "schematics": 4,
+                "unlockLevel": 10,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 32
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 200
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 2
+                        },
+                        {
+                            "name": "Water",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Food",
+                            "amount": 30
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Space Heater",
+                "description": "A space heater for the Drakes to feel cozy and at home during the winter.",
+                "budget": 2,
+                "schematics": 1,
+                "unlockLevel": 10,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 50
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Heat",
+                            "amount": 5
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Oak Tree",
+                "description": "Ancient and elegant, a proud tree.",
+                "budget": 0,
+                "schematics": 1,
+                "unlockLevel": 10,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Acorn",
+                            "amount": 1
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Pumpkin Patch",
+                "description": "Pumpkins are some of the Drakes' favorite treats, and this farm alwats provides them with nourishment opportunities. Provides Food.",
+                "budget": 10,
+                "schematics": 6,
+                "unlockLevel": 11,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 24
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 24
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 100
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Food",
+                            "amount": 30
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Electric Fence",
+                "description": "Provides a boot to defense as enemies will be shocked by this fence.",
+                "budget": 1,
+                "schematics": 3,
+                "unlockLevel": 11,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Circuitry",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 30
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 2
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Tall Electric Fence",
+                "description": "A taller variation of the Electric Fence.",
+                "budget": 2,
+                "schematics": 5,
+                "unlockLevel": 11,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Stone",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 30
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 3
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Metal Gate",
+                "description": "An extremely strong gate for friendly Drakes to exit and enter the camp.",
+                "budget": 0,
+                "schematics": 3,
+                "unlockLevel": 11,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 32
+                        },
+                        {
+                            "name": "Lumber",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 40
+                        }
+                    ],
+                    "utilities": []
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": []
+                }
+            },
+
+            {
+                "name": "Radiator",
+                "description": "Radiator to warm up large spaces.",
+                "budget": 4,
+                "schematics": 3,
+                "unlockLevel": 12,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Lumber",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 4
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 100
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 2
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Heat",
+                            "amount": 9
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Geothermal Heater",
+                "description": "Geothermal Heater is not only environmentally safe, but also heats up a very large area for the camp.",
+                "budget": 6,
+                "schematics": 4,
+                "unlockLevel": 12,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 32
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 24
+                        },
+                        {
+                            "name": "Fabric",
+                            "amount": 8
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 200
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 3
+                        },
+                        {
+                            "name": "Water",
+                            "amount": 1
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Heat",
+                            "amount": 11
+                        }
+                    ]
+                }
+            },
+
+            {
+                "name": "Geothermal Generator",
+                "description": "An environmentally-conscious and powerful generator.",
+                "budget": 6,
+                "schematics": 6,
+                "unlockLevel": 12,
+                "requirements": {
+                    "resources": [
+                        {
+                            "name": "Scrap Metal",
+                            "amount": 16
+                        },
+                        {
+                            "name": "Circuitry",
+                            "amount": 48
+                        },
+                        {
+                            "name": "Charms",
+                            "amount": 200
+                        }
+                    ],
+                    "utilities": [
+                        {
+                            "name": "Water",
+                            "amount": 2
+                        }
+                    ]
+                },
+                "provides": {
+                    "resources": [],
+                    "utilities": [
+                        {
+                            "name": "Power",
+                            "amount": 15
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
