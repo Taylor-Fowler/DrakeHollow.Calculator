@@ -8,7 +8,7 @@ on:
       repository:
         name: 'DrakeHollow.Calculator'
   push:
-    branches: [ $default-branch ]
+    branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: Calculator
+        working-directory: ./Calculator
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 10.x
@@ -26,10 +26,13 @@ jobs:
       with:
         node-version: '10.x'
         
-    - run: echo ${{ github.repository_owner }}
-    - run: echo ${{ github.event.repository.name }}
     - run: npm ci
     - run: npm run build --if-present -- --prod --baseHref=${{ format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}
+      
+    - run: echo ${{ github.repository_owner }}
+    - run: echo ${{ github.event.repository.name }}
+      working-directory: ./
+      
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.6.1
       with:
