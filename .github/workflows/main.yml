@@ -33,4 +33,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: ${{ format('{0}/dist', env.appRootWithoutPrefix) }}
+        TARGET_FOLDER: ./
         CLEAN: true 
