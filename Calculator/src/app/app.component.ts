@@ -7,7 +7,7 @@ import { DataService } from "./services/data.service";
     styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-    title = "Calculator";
+    title = "Drake Hollow Calculator";
 
 
     constructor(private dataService: DataService) { }
